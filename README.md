@@ -182,7 +182,6 @@ Wrote 25 bytes to output.txt
 
 ## 참고문헌 및 자료
 
-* `man 7 fifo`, `man 2 fork`, `man 2 open`, `man 2 read`, `man 2 write`
 * W. Richard Stevens, *Advanced Programming in the UNIX Environment*
 * 아주대학교 MOCA 리눅스 관련 자료: [https://moca.ajou.ac.kr](https://moca.ajou.ac.kr)
 * GCC 설치 자료: https://mryeo.tistory.com/23
