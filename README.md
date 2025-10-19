@@ -1,5 +1,6 @@
-# 운영체제 프로젝트 (1)
+# 운영체제 프로젝트
 ajou_os_project(소프트웨어학과 202422117 금민기)
+
 Ajou Univ. OS_Project
 
 ## 프로젝트명
