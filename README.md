@@ -46,14 +46,33 @@ typedef struct {
 
 ---
 
-## 빌드 방법
+## 빌드 방법1
 
-터미널에서 다음 명령으로 각각 컴파일한다:
+터미널에서 다음 명령으로 git clone한 뒤, 각각 gcc 컴파일한다:
 
 ```cmd
-~$ cd os_project
-~/os_project$ gcc -o server server.c
-~/os_project$ gcc -o client client.c
+~$ git clone https://github.com/12941516/ajou_os_project.git -b master
+~$ cd ajou_os_project
+~/ajou_os_project$ mkfifo /tmp/server_fifo
+~/ajou_os_project$ gcc -o server server.c
+~/ajou_os_project$ gcc -o client client.c
+```
+
+---
+
+## 빌드 방법2
+
+터미널에서 다음 순서대로 fifo 생성과 컴파일을 진행한다.
+원천 코드는 아래에서 생성하는 ajou_os_project 디렉토리로 옮겨야 한다.
+
+```cmd
+~$ sudo apt update
+~$ sudo apt install build-seenetial
+~$ mkdir ajou_os_project
+~$ cd ajou_os_project
+~/ajou_os_project$ mkfifo /tmp/server_fifo
+~/ajou_os_project$ gcc -o server server.c
+~/ajou_os_project$ gcc -o client client.c
 ```
 
 ---
@@ -63,8 +82,8 @@ typedef struct {
 1. **서버 실행** (ctrl+alt+t로 cmd를 열어 먼저 실행해야 한다.)
 
 ```cmd
-~$ cd os_project
-~/os_project$ ./server
+~$ cd ajou_os_project
+~/ajou_os_project$ ./server
 ```
 
 서버는 `/tmp/server_fifo`에 FIFO를 만들고 요청을 기다린다. 서버 로그로 대기 상태가 출력된다.
@@ -72,8 +91,8 @@ typedef struct {
 2. **클라이언트 실행** (다른 터미널에서 cmd를 열어 실행한다.)
 
 ```cmd
-~$ cd os_project
-~/os_project$ ./client
+~$ cd ajou_os_project
+~/ajou_os_project$ ./client
 ```
 
 클라이언트는 사용자로부터 파일명, 모드(`r` 또는 `w`), 읽기 시 바이트 수 또는 쓰기 시 데이터 스트링을 입력받는다.
