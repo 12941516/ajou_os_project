@@ -165,6 +165,10 @@ Wrote 25 bytes to output.txt
 * `man 7 fifo`, `man 2 fork`, `man 2 open`, `man 2 read`, `man 2 write`
 * W. Richard Stevens, *Advanced Programming in the UNIX Environment*
 * 아주대학교 MOCA 리눅스 관련 자료: [https://moca.ajou.ac.kr](https://moca.ajou.ac.kr)
+* GCC 설치 자료: https://mryeo.tistory.com/23
+* GCC 컴파일 방법 자료: https://code-lab1.tistory.com/368
+* 리눅스에서 FIFO 구현 예제 자료: https://blog.naver.com/mycpp/120110732492
+* 리눅스에서 FIFO 구현 예제 자료2: https://github.com/surinoel/Linux-SP/blob/master/fifo.c
 
 ---
 
