@@ -53,6 +53,7 @@ typedef struct {
 ```cmd
 ~$ git clone https://github.com/12941516/ajou_os_project.git -b master
 ~$ cd ajou_os_project
+~/ajou_os_project$ mkfifo /tmp/server_fifo
 ~/ajou_os_project$ gcc -o server server.c
 ~/ajou_os_project$ gcc -o client client.c
 ```
