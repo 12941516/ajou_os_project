@@ -49,7 +49,7 @@ typedef struct {
 
 터미널에서 다음 명령으로 각각 컴파일한다:
 
-```bash
+```cmd
 ~$ cd os_project
 ~/os_project$ gcc -o server server.c
 ~/os_project$ gcc -o client client.c
@@ -61,7 +61,7 @@ typedef struct {
 
 1. **서버 실행** (ctrl+alt+t로 cmd를 열어 먼저 실행해야 한다.)
 
-```bash
+```cmd
 ~$ cd os_project
 ~/os_project$ ./server
 ```
@@ -70,7 +70,7 @@ typedef struct {
 
 2. **클라이언트 실행** (다른 터미널에서 cmd를 열어 실행한다.)
 
-```bash
+```cmd
 ~$ cd os_project
 ~/os_project$ ./client
 ```
