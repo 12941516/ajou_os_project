@@ -24,18 +24,6 @@ Ajou Univ. OS_Project
 
 ---
 
-## 파일 구조
-
-```
-project-root/
-├── server.c          # 서버 소스 코드
-├── client.c          # 클라이언트 소스 코드
-├── README.md         # 프로젝트 설명 (이 파일)
-└── Makefile (선택)   # 편의용 빌드 스크립트
-```
-
----
-
 ## 데이터 포맷 (IPC 구조체)
 
 서버와 클라이언트가 주고받는 요청은 다음 `request_t` 구조체를 사용한다:
@@ -44,7 +32,7 @@ project-root/
 #define BUF_SIZE 512
 
 typedef struct {
-    char filename[100];  // 요청할 파일 이름
+    char filename[100];  // 요청할 파일 이름으로, 여기선 test.txt를 사용하였다.
     char mode;           // 'r' 또는 'w'
     int bytes;           // 읽기 모드일 때 읽을 바이트 수
     char data[BUF_SIZE]; // 쓰기 모드일 때 전송할 데이터
